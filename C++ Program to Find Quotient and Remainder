@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Dividend, Divisor, Quotient, Remainder;
+    cout<<"Enter Dividend:\n";
+    cin>>Dividend;
+    cout<<"Enter Divisor:\n";
+    cin>>Divisor;
+    cout<<"Your Quotient is "<<Dividend/Divisor<<".\n";
+    cout<<"Your Remainder is "<<Dividend%Divisor<<".";
+    
+}
