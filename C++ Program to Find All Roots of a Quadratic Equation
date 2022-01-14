@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+   int a, b, c, discriminant;
+   cout<<"Enter the three numbers:\n";
+   cin>>a>>b>>c;
+   discriminant=(b*b)-(4*a*c);
+   if(discriminant<0)
+   cout<<"Discriminant is "<<discriminant;
+   if(0==discriminant)
+   cout<<"The two roots are "<<(-b)/(2*a)<<" and "<<(-b)/(2*a);
+   if(0<discriminant)
+   cout<<"The two roots are "<<((-b)+ sqrt(discriminant))/(2*a)<<" and "<<((-b)- sqrt(discriminant))/(2*a);  
+   if(0>discriminant)
+   cout<<"The two roots are "<<((-b)/(2*a))+(discriminant/(2*a)) <<"i and "<<((-b)/(2*a))-(discriminant/(2*a))<<"i";
+   
+    return 0;
+}
