@@ -1,0 +1,22 @@
+int main()
+{
+    /*BMI Calculator
+    weight(kg)/(height*height)(m)
+    underweight<18.5
+    normal weight 18.5-24.9
+    overweight>25*/
+    float height, weight, bmi;
+    cout<<"Enter weight and height in kg and meter respectively:"<<endl;
+    cin>>weight>>height;
+    bmi=weight/(height*height);
+    cout<<bmi<<endl;
+    cout<<"Your BMI is "<<bmi<<"."<<endl;
+    if(bmi<18.5)
+        cout<<"You are Underweight."<<endl;
+    else if(bmi>18.5 && bmi<24.9)
+        cout<<"You are Normalweight."<<endl;
+    else if(bmi>25)
+        cout<<"You are Overweight."<<endl;
+    
+    
+}
