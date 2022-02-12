@@ -1,0 +1,43 @@
+int main()
+{
+    float num1, num2;
+    char operation;
+    cout<<"Enter:"<<endl;
+    cin>>num1>>operation>>num2;
+    switch(operation)
+    {
+        case ('+'):
+        cout<<"="<<num1+num2;
+        break;
+        
+        case ('-'):
+        cout<<"="<<num1-num2;
+        break;
+        
+        case ('*'):
+        cout<<"="<<num1*num2;
+        break;
+        
+        case ('/'):
+        cout<<"="<<num1/num2;
+        break;
+        
+         case('%'):
+         
+         bool IsintNum1, IsintNum2;
+         IsintNum1=((int)num1==num1);
+         IsintNum2=((int)num2==num2);
+          
+          if(IsintNum1 && IsintNum2)
+          cout<<"="<<(int)num1%(int)num2;
+          else
+          cout<<"Invalid!";
+          break;
+          
+         default:
+        cout<<"Invalid operation";
+        
+    }
+    
+    return 0;
+}
