@@ -1,0 +1,20 @@
+int main()
+{
+    int userspin=1234, pin, error=0;
+    do
+    {
+        cout<<"Enter pin: ";
+        cin>>pin;
+        if(pin!=userspin)
+        {
+            error++;
+        }
+    }
+    while(error<3 && pin!=userspin);
+    if(pin==userspin)
+    cout<<"Application is loading";
+    else
+    cout<<"Application has been blocked";
+
+    return 0;
+}
